@@ -1,9 +1,69 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: The Seasons;
 }
 
-header {
-    background-color: #223d3c;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7dada;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    text-align: center;
+    position: sticky;
+    display: flex;
+    top: 0;
+    right: 0;
+    top: 0;
+    margin-left: 800px;
+    margin-right: 0
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #010101;
+}
+
+.solicitar-email,
+.solicitar-senha {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#email,
+#senha {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#butao-login {
+    font-family: The Seasons;
+    width: 100%;
+    padding: 10px;
+    background: #223D3C;
+    color: #f5fdfd;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#butao-login:hover {
+    background: #1b2f2e;
 }

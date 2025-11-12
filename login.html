@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducaFlow</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducaFlow - Login</title>
+    <link rel="stylesheet" href="login.css" />
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <img src="" alt="Logo do EducaFlow">
-        
-    </main> 
+
+    <header class="cabecalho"></header>
+
+    <main class="conteudo">
+    <section class="secao-logo">
+        <div class="caixa-logo">
+        <img class="logo" src="Logo EducaFlow em verde.png" alt="Logo EducaFlow" /></div>
+    </section>
+
+    <section class="container">
+        <form>
+        <h1>FAÇA O SEU LOGIN:</h1>
+
+        <div class="solicitar-email">
+            <input id="email" placeholder="Email" type="email" required />
+        </div>
+
+        <div class="solicitar-senha">
+            <input id="senha" placeholder="Senha" type="password" required />
+            <a href="#" class="link-senha">Esqueceu a senha?</a>
+        </div>
+
+        <button id="butao-login" type="submit" class="btn">Entrar</button>
+        </form>
+    </section>
+    </main>
+
+    <footer class="rodape">
+    <p>
+        &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
+    </p>
+    <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+    </footer>
+
+    <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,156 @@
+/* ====== Estilo geral ====== */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f6f3f2;
+    color: #22302f;
+}
+
+/* ====== Cabeçalho ====== */
+.cabecalho {
+    background-color: #22302f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.icone-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.icone-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 30px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Conteúdo principal ====== */
+.conteudo-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+/* ====== Cartões ====== */
+.secao-cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 100px;
+}
+
+.cartao {
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.cartao {
+    text-decoration: none;
+    color: white;
+}
+
+
+.cartao h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cartao .numero {
+    font-size: 47px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.linha {
+    width: 95%;
+    height: 3px;
+    background-color: rgb(237, 234, 234);
+    position: relative;
+    }
+
+.linha::after {
+    content: '➜';
+    position: absolute;
+    right: -17.7px;   
+    top: -13px;     
+    font-size: 20px;
+}
+
+/* ====== Efeito ao clicar ====== */
+.cartao:active {
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ====== Seção de informações ====== */
+.secao-informacoes {
+    text-align: center;
+}
+
+.secao-informacoes img {
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: px;
+}
+
+.secao-informacoes p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #22302f;
+}
+
+/* ====== Rodapé ====== */
+.rodape {
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rodape p {
+    margin: 5px 0;
+}

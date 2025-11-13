@@ -9,7 +9,7 @@ body{
 }
 
 nav.menu-lateral{
-    width: 33px;
+    width: 37px;
     height: 100%;
     background-color: #202020;
     padding: 40px 0px 40px 1%;
@@ -58,7 +58,7 @@ ul li.item-menu a{
     padding: 20px 4%;
     display: flex;
     margin-bottom: 20px;
-    line-height: 40px;
+    line-height: 100px;
 }
 ul li.item-menu a .text-link{
     margin-left: 40px;

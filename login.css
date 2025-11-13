@@ -1,78 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: The Seasons;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #e7dada;
-    background-size: cover;
-    background-position: center;
-}
-
-.container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 420px;
-    text-align: center;
-    position: sticky;
-    display: flex;
-    top: 0;
-    right: 0;
-    top: 0;
-    margin-left: 800px;
-    margin-right: 0
-}
-
-.container h1 {
-    margin-bottom: 20px;
-    color: #010101;
-}
-
-.solicitar-email,
-.solicitar-senha {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-#email,
-#senha {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#butao-login {
-    font-family: The Seasons;
-    width: 100%;
-    padding: 10px;
-    background: #223D3C;
-    color: #f5fdfd;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#butao-login:hover {
-    background: #1b2f2e;
-} */
-
-
-
-
-
-/* ====== Reset e fontes ====== */
 * {
     margin: 0;
     padding: 0;
@@ -80,13 +5,13 @@ body {
     font-family: 'The Seasons', serif;
 }
 
-/* ====== Corpo geral ====== */
+
 body {
     min-height: 100vh;
     background: #f6f3f2;
 }
 
-/* ====== Cabeçalho ====== */
+/* cabeçalho do login */
 .cabecalho {
     background-color: #223d3c;
     color: #fff;
@@ -109,27 +34,27 @@ body {
     height: 40px;
 }
 
-/* ====== Conteúdo ====== */
+/* conteúdo */
 .conteudo {
-    flex: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 60px 40px;
-    flex-wrap: wrap;
+    /* padding: 60px 40px; */
+    margin-top: 150px;
 }
 
-/* ====== Caixa da logo lateral ====== */
+/* logo */
 .caixa-logo {
     background: #ffffff;
     padding: 40px 60px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: center;
 }
 
 .caixa-logo img {
-    width: 100px;
+    width: 80%;
     margin-bottom: 10px;
 }
 
@@ -138,8 +63,16 @@ body {
     font-size: 28px;
 }
 
-/* ====== Formulário de login ====== */
-.container {
+
+.secao_forme {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    unicode-bidi: isolate;
+}
+
+/* formulário de login */
+.formulario {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px 40px;
     border-radius: 10px;
@@ -148,7 +81,7 @@ body {
     text-align: center;
     }
 
-.container h1 {
+.formulario h1 {
     margin-bottom: 20px;
     color: #010101;
     font-size: 22px;
@@ -167,22 +100,7 @@ body {
     font-size: 16px;
 }
 
-/* ====== Link "Esqueceu a senha" ====== */
-.link-senha {
-    display: block;
-    text-align: right;
-    font-size: 13px;
-    margin-top: 5px;
-    text-decoration: none;
-    color: #223d3c;
-    opacity: 0.8;
-}
-
-.link-senha:hover {
-    text-decoration: underline;
-}
-
-/* ====== Botão de login ====== */
+/* botão de login */
 #butao-login {
     font-family: 'The Seasons', serif;
     width: 100%;
@@ -200,7 +118,7 @@ body {
     background: #1b2f2e;
 }
 
-/* ====== Rodapé ====== */
+/* Rodapé login*/
 .rodape {
     background-color: #223d3c;
     color: white;
@@ -208,6 +126,9 @@ body {
     padding: 15px;
     font-size: 14px;
     line-height: 1.5;
+    position: fixed; /* para deixar fixo */
+    bottom: 0; 
+    width: 100%;
 }
 
 .rodape p {

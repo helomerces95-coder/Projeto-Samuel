@@ -121,7 +121,6 @@ body {
 }
 
 .demo-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -132,32 +131,28 @@ body {
     transition: transform 0.2s;
 }
 
-.demo-btn:hover {
-    transform: translateY(-2px);
-}
 
 /* Sidebar Collapsed */
 .sidebar.collapsed {
-    width: 70px;
+    width: 70px; /*Quando a sidebar estiver menor, ela vai ter 70px (normalmente, ela tem 250px)*/
 }
 
-.sidebar.collapsed .sidebar-header h2,
-.sidebar.collapsed .menu-item span,
-.sidebar.collapsed .user-details,
-.sidebar.collapsed .user-avatar {
+/*Está com o .sidebar.collapsed pois está com os 70px*/
+.sidebar.collapsed .sidebar-header h2, /**/
+.sidebar.collapsed .menu-item span /*São os nomes do itens (alunos, servidores, etc)*/ {
     display: none;
 }
 
-.sidebar.collapsed .sidebar-header {
+.sidebar.collapsed .sidebar-header { /*Serve para centralizar quando a sidebar estiver menor*/
     justify-content: center;
 }
 
-.sidebar.collapsed .menu-item {
+.sidebar.collapsed .menu-item { /*Serve para centralizar os icones e ajustar o espaço interno na sidebar*/
     justify-content: center;
     padding: 15px;
 }
 
-.sidebar.collapsed .menu-item i {
+.sidebar.collapsed .menu-item i { /*Remove a margem da direita e aumenta o tamanho dos icones em 1.3rem. Serve para remover o nome, mas não o icone*/
     margin-right: 0;
     font-size: 1.3rem;
 }
@@ -166,27 +161,6 @@ body {
     justify-content: center;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        position: fixed;
-        left: -250px;
-        height: 100vh;
-        z-index: 1000;
-    }
-    
-    .sidebar.active {
-        left: 0;
-    }
-    
-    .main-content {
-        margin-left: 0;
-    }
-    
-    .toggle-btn {
-        display: block;
-    }
-}
 
 /* Abaixo NÃO É SIDEBAR */
 
@@ -326,15 +300,15 @@ body {
     color: #22302f;
 }
 
-/* Rodapé início */
-/* .rodape {
+/*Inicio do rodapé*/
+.rodape {
     background-color: #22302f;
     color: white;
     text-align: center;
     padding: 15px;
     font-size: 14px;
     line-height: 1.5;
-    position: fixed; /* para deixar fixo 
+    position: fixed; /* para deixar fixo*/ 
     bottom: 0; 
     width: 100%;
 }
@@ -342,4 +316,4 @@ body {
 .rodape p {
     margin: 5px 0;
 }
- */
+

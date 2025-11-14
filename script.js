@@ -1,21 +1,38 @@
-var menuItem = document.querySelectorAll('.item-menu')
+// Toggle sidebar
+const toggleBtn = document.getElementById('toggleSidebar');
+const sidebar = document.querySelector('.sidebar');
+const toggleDemo = document.getElementById('toggleDemo');
 
-function selectLink(){
-    menuItem.forEach((item)=> 
-        item.classList.remove('ativo') //Remove a classe 'ativo' de um item que eu não cliquei
-    )
-    this.classList.add('ativo') // Adiciona a classe 'ativo' em um item que eu cliquei
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+});
+
+toggleDemo.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+});
+
+// Para mobile
+function handleMobileView() {
+    if (window.innerWidth <= 768) {
+        sidebar.classList.remove('collapsed');
+        sidebar.classList.add('active');
+    } else {
+        sidebar.classList.remove('active');
+    }
 }
 
-menuItem.forEach((item)=>
-    item.addEventListener('click', selectLink)
-)
+// Inicialização
+handleMobileView();
+window.addEventListener('resize', handleMobileView);
 
-// Expandir o menu
+// Adicionar interação aos itens do menu
+const menuItems = document.querySelectorAll('.menu-item');
 
-var btnExp = document.querySelector('#btn-exp')
-var menuSide = document.querySelector('.menu-lateral')
-
-btnExp.addEventListener('click', function(){
-    menuSide.classList.toggle('expandir')
-})
+menuItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        // Remove active de todos os itens
+        menuItems.forEach(i => i.classList.remove('active'));
+        // Adiciona active ao item clicado
+        e.currentTarget.classList.add('active');
+    });
+});

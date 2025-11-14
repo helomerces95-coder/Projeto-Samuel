@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Moderna</title>
+    <link rel="stylesheet" href="teste.css">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="Logo EducaFlow em verde.png" alt="Logotipo EducaFlow">
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menu</h2>
+                <button class="toggle-btn" id="toggleSidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="menu-item active"> <!--Active é em relação ao JS, onde usamos o classList, adicionando "active" nesta classe-->
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item"> <!-- Menu-item: Classe para estilizar cada item -->
+                        <i class="fas fa-chart-bar"></i> <!---Icone utilizado para deixar mais estilizado-->
+                        <span>Turmas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        <span>Servidores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        <span>Alunos</span>
+                    </a>
+                </li>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40" alt="Usuário" class="user-avatar">
+                    <div class="user-details">
+                        <span class="user-name">João Silva</span>
+                        <span class="user-role">Administrador</span>
+                    </div>
+                </div>
+                <button class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+    <main class="cont_principal">
+    <section class="cartoes">
+        <a href="alunos.html" class="cartao">
+            <h2>Alunos</h2>
+            <p class="numero">01</p>
+            <div class="linha"></div>
+        </a>
+
+        <a href="servidores.html" class="cartao">
+            <h2>Servidores</h2>
+            <p class="numero">02</p>
+            <div class="linha"></div>
+        </a>
+
+        <a href="turmas.html" class="cartao">
+            <h2>Turmas</h2>
+            <p class="numero">03</p>
+            <div class="linha"></div>
+        </a>
+
+        <a href="desempenho.html" class="cartao">
+            <h2>Desempenho</h2>
+            <p class="numero">04</p>
+            <div class="linha"></div>
+        </a>
+    </section>
+    
+    <section class="informacoes">
+        <img src="if baiano.jpeg" alt="Imagem do IF Baiano">
+        <p><strong>E-mail:</strong><br> gabinete@lapa.ifbaiano.edu.br</p>
+    </section>
+    </main>
+
+    <!-- <footer class="rodape">
+        <p>&copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa</p>
+        <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+    </footer> -->
+
+    <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
+        
+    <script src="script.js"></script>
+</body>
+</html>

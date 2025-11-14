@@ -11,16 +11,6 @@ toggleDemo.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
 });
 
-// Para mobile
-function handleMobileView() {
-    if (window.innerWidth <= 768) {
-        sidebar.classList.remove('collapsed');
-        sidebar.classList.add('active');
-    } else {
-        sidebar.classList.remove('active');
-    }
-}
-
 // Inicialização
 handleMobileView();
 window.addEventListener('resize', handleMobileView);

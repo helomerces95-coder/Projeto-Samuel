@@ -3,18 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducaFlow - Início</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Sidebar Moderna</title>
     <link rel="stylesheet" href="home.css">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
     <header class="cabecalho">
         <div class="logo">
             <img src="Logo EducaFlow em verde.png" alt="Logotipo EducaFlow">
         </div>
     </header>
 
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menu</h2>
+                <button class="toggle-btn" id="toggleSidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="menu-item active"> <!--Active é em relação ao JS, onde usamos o classList, adicionando "active" nesta classe-->
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item"> <!-- Menu-item: Classe para estilizar cada item -->
+                        <i class="fas fa-chart-bar"></i> <!---Icone utilizado para deixar mais estilizado-->
+                        <span>Turmas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        <span>Servidores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-users"></i>
+                        <span>Alunos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
     <main class="cont_principal">
     <section class="cartoes">
         <a href="alunos.html" class="cartao">
@@ -56,5 +96,7 @@
     <script>
     document.getElementById("ano").textContent = new Date().getFullYear();
     </script>
+        
+    <script src="script.js"></script>
 </body>
-</html>  
+</html>

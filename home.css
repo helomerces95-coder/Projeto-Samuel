@@ -4,71 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 900vh;
-}
-
-nav.menu-lateral{
-    width: 37px;
-    height: 100%;
-    background-color: #202020;
-    padding: 40px 0px 40px 1%;
-    box-shadow: 3px 0 0 #22302f;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-nav.menu-lateral.expandir{
-    width: 300px;
-}
-
-div.btn-expandir{
-    width: 100%;
-    padding-left: 10px;
-}
-div.btn-expandir i {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-ul{
-    height: 100%;
-    list-style-type: none;
-}
-
-ul li.item-menu{
-    transition: 0.5s;
-}
-ul li.ativo{
-    background-color: #22302f;
-}
-ul li.item-menu:hover{
-    background-color: #22302f;
-}
-
-ul li.item-menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 100px;
-}
-ul li.item-menu a .text-link{
-    margin-left: 40px;
-}
-
-ul li.item-menu a .icon > i{
-    font-size: 30px;
-    margin-left: 10px;
-}
-
 /* daqui para baixo NÃO É A SIDEBAR */
 
 body {
@@ -76,7 +11,7 @@ body {
     font-family: 'Georgia', serif;
     background-color: #f6f3f2;
     color: #22302f;
-}
+} 
 
 /* cabeçalho */
 .cabecalho {
@@ -126,7 +61,7 @@ body {
 
 .navegacao a:hover {
     text-decoration: underline;
-}
+} 
 
 /* conteúdo principal */
 .cont_principal {
@@ -135,7 +70,7 @@ body {
     align-items: center;
     padding: 50px;
     flex-wrap: wrap;
-}
+} 
 
 /* divs */ 
 /* tudo isso é para deixar em coluna a*/
@@ -188,14 +123,14 @@ body {
     right: -17.8px;   
     top: -13.6px;     
     font-size: 20px;
-}
+} 
 
 /* ao clicar */
 .cartao:active {
     transform: scale(1.15);
     z-index: 10;
     box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
-}
+} 
 
 /* informações */
 .informacoes {
@@ -230,3 +165,4 @@ body {
 .rodape p {
     margin: 5px 0;
 }
+

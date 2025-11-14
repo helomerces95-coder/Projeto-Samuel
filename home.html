@@ -8,94 +8,40 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sidebar</title>
-</head>
-<body>
     
-    <nav class="menu-lateral">
-        <div class="btn-expandir">
-            <i class="bi bi-list" id="btn-exp"></i>
-        </div>
-
-        <ul>
-            <li class="item-menu ativo">
-                <a href="#">
-                    <span class="Icon"> <i class="bi bi-person"></i> </span>
-                    <span class="txt-link">Servidor</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="Icon"> <i class="bi bi-file-person"></i> </span>
-                    <span class="txt-link"> Alunos </span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="Icon"> <i class="bi bi-pencil"></i> </span>
-                    <span class="txt-link">Turmas</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
     <header class="cabecalho">
-    <div class="menu">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="logo">
-        <img src="Logo EducaFlow em verde.png" alt="Logotipo EducaFlow">
-    </div>
-
-    <nav class="navegacao">
-        <a href="home.html">Início</a>
-        <a href="alunos.html">Alunos</a>
-        <a href="servidores.html">Servidores</a>
-        <a href="turmas.html">Turmas</a>
-        <a href="desempenho.html">Desempenho</a>
-    </nav>
+        <div class="logo">
+            <img src="Logo EducaFlow em verde.png" alt="Logotipo EducaFlow">
+        </div>
     </header>
 
     <main class="cont_principal">
     <section class="cartoes">
         <a href="alunos.html" class="cartao">
-        <h2>Alunos</h2>
-        <p class="numero">01</p>
-        <div class="linha"></div>
+            <h2>Alunos</h2>
+            <p class="numero">01</p>
+            <div class="linha"></div>
         </a>
 
         <a href="servidores.html" class="cartao">
-        <h2>Servidores</h2>
-        <p class="numero">02</p>
-        <div class="linha"></div>
+            <h2>Servidores</h2>
+            <p class="numero">02</p>
+            <div class="linha"></div>
         </a>
 
         <a href="turmas.html" class="cartao">
-        <h2>Turmas</h2>
-        <p class="numero">03</p>
-        <div class="linha"></div>
+            <h2>Turmas</h2>
+            <p class="numero">03</p>
+            <div class="linha"></div>
         </a>
 
         <a href="desempenho.html" class="cartao">
-        <h2>Desempenho</h2>
-        <p class="numero">04</p>
-        <div class="linha"></div>
+            <h2>Desempenho</h2>
+            <p class="numero">04</p>
+            <div class="linha"></div>
         </a>
     </section>
-
+    
     <section class="informacoes">
         <img src="if baiano.jpeg" alt="Imagem do IF Baiano">
         <p><strong>E-mail:</strong><br> gabinete@lapa.ifbaiano.edu.br</p>
@@ -103,13 +49,12 @@
     </main>
 
     <footer class="rodape">
-    <p>&copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa</p>
-    <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+        <p>&copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa</p>
+        <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
     </footer>
 
     <script>
     document.getElementById("ano").textContent = new Date().getFullYear();
     </script>
 </body>
-</html>
-
+</html>  

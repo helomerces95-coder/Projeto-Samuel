@@ -67,7 +67,7 @@ body {
     padding: 12px 20px;
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /*Animação suave de 0.3 segundos*/
     border-left: 3px solid transparent;
 }
 
@@ -91,59 +91,7 @@ body {
     font-weight: 500;
 }
 
-/* Footer Styles */
-.sidebar-footer {
-    padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.user-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.user-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.user-role {
-    font-size: 0.8rem;
-    opacity: 0.8;
-}
-
-.logout-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.logout-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Main Content Styles */
+/* Estilo do conteiner principal */
 .main-content {
     flex: 1;
     padding: 30px;

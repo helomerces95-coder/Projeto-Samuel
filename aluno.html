@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
@@ -8,21 +8,24 @@
 </head>
 
 <body>
+     <header class="top-header">
+    <div class="header-logo">
+        <img src="Logo EducaFlow em verde.png" alt="EducaFlow">
+    </div>
+</header>
+
 
     <div class="container">
-        <div class="form-image">
-            <img src="" alt="imagem do cadastro">
-        </div>
+
          <div class="form">
             <form action="#">
                 <div class="form-header">
                     <div class="titulo">
                         <h1>Cadastre-se</h1>
                     </div>
-                    <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
-                    </div>
                 </div>
+
+                <div class="form-grid">
 
                     <div class="input-caixa">
                         <label for="nome">Nome:</label>
@@ -31,39 +34,30 @@
                 
                     <div class="input-caixa">
                         <label for="data_nascimento">Data de nascimento:</label>
-                        <input id="data_nascimento" type="date" name="data_nascimento"  required>
+                        <input id="data_nascimento" type="date" name="data_nascimento" required>
                     </div>
-                
 
-                
                     <div class="input-caixa">
                         <label for="cpf">CPF:</label>
                         <input id="cpf" type="number" name="cpf" placeholder="Digite seu CPF" required>
                     </div>
-                
 
-                
                     <div class="input-caixa">
                         <label for="email">Email:</label>
-                        <input id="email" type="string" name="email" placeholder="Digite seu email" required>
+                        <input id="email" type="text" name="email" placeholder="Digite seu email" required>
                     </div>
-                
 
-
-                
                     <div class="input-caixa">
                         <label for="telefone">Telefone:</label>
-                        <input id="telefone" type="tel" name="number" placeholder="(00) 00000-0000" required>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(00) 00000-0000" required>
                     </div>
-
 
                     <div class="input-caixa">
                         <label for="endereco">Endereço:</label>
-                        <input id="endereco" type="text" name="endereco" placeholder="rua x, bairro y" required>
+                        <input id="endereco" type="text" name="endereco" placeholder="Rua X, Bairro Y" required>
                     </div>
 
-
-                     <div class="input-caixa">
+                    <div class="input-caixa">
                         <label for="estado">Estado:</label>  
                         <select id="estado" name="estado" required>
                             <option value="">Selecione</option>
@@ -87,7 +81,7 @@
                             <option value="PI">Piauí</option>
                             <option value="RJ">Rio de Janeiro</option>
                             <option value="RN">Rio Grande do Norte</option>
-                        1   <option value="RS">Rio Grande do Sul</option>
+                            <option value="RS">Rio Grande do Sul</option>
                             <option value="RO">Rondônia</option>
                             <option value="RR">Roraima</option>
                             <option value="SC">Santa Catarina</option>
@@ -95,27 +89,41 @@
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
                         </select>
-    
+                    </div>
 
-                        
-
-
-
-                     <div class="input-caixa">
+                    <div class="input-caixa">
                         <label for="cidade">Cidade:</label>
                         <input id="cidade" type="text" name="cidade" placeholder="Digite a sua cidade" required>
                     </div>
-   
-                
+
+                </div> <!-- fim grid -->
+
+                <div class="genero-group">
+                    <h6>Gênero</h6>
+
+                    <label><input type="radio" name="genero"> Feminino</label>
+                    <label><input type="radio" name="genero"> Masculino</label>
+                    <label><input type="radio" name="genero"> Outro</label>
+                    <label><input type="radio" name="genero"> Prefiro não dizer</label>
+                </div>
+
+                <div class="login-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
 
             </form>
+
+            <footer class="rodape">
+                <p>
+                &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
+                </p>
+                <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+            </footer>
+
+        
          </div>
     </div>
 
 </body>
 </html>
-
-
-
-
 

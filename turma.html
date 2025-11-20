@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,85 +8,91 @@
 </head>
 
 <body>
-     <header class="top-header">
-    <div class="header-logo">
-        <img src="Logo EducaFlow em verde.png" alt="EducaFlow">
-    </div>
+
+<header class="cabecalho">
+    <img src="Logo EducaFlow em verde.png" class="logo" alt="EducaFlow">
 </header>
 
+<!-- area que deixa o sidebar escondido -->
+<div class="hover-area"></div>
 
-    <div class="container">
+<aside class="sidebar">
+    <h2>Menu</h2>
+    <a href="home.html" class="menu-item">Início</a>
+    <a href="aluno.html" class="menu-item">Alunos</a>
+    <a href="servidor.html" class="menu-item">Servidores</a>
+    <a href="turma.html" class="menu-item">Turmas</a>
+</aside>
 
-         <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="titulo">
-                        <h1>Cadastro de Turma</h1>
-                    </div>
+<div class="container">
+
+    <div class="form">
+        <form action="#">
+
+            <div class="form-header">
+                <h1>Cadastro de Turma</h1>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="input-caixa">
+                    <label for="ano-letivo">Ano Letivo:</label>
+                    <input id="ano-letivo" type="number" name="ano" placeholder="ex: 2025" required>
                 </div>
 
-                <div class="form-grid">
-
-                    <div class="input-caixa">
-                        <label for="ano">Ano Letivo:</label>
-                        <input id="ano" type="number" name="ano" placeholder="ex: 2025" required>
-                    </div>
-                
-                    <div class="input-caixa">
-                        <label for="serie">Série/Etapa:</label>
-                        <input id="serie" type="text" name="serie" placeholder="ex: segundo ano" required>
-                    </div>
-
-                    <div class="input-caixa">
-                        <label for="turno">Turno:</label>
-                        <input id="turno" type="text" name="turno" placeholder="Matutino/Vespertino" required>
-                    </div>
-
-                    <div class="input-caixa">
-                        <label for="modalidade">Modalidade:</label>
-                        <input id="modalidade" type="text" name="modalidade" placeholder="Integral/Meio período" required>
-                    </div>
-
-                    <div class="input-caixa">
-                        <label for="num">Número de Alunos:</label>
-                        <input id="num" type="number" name="num" placeholder="00" required>
-                    </div>
-
-                    <div class="input-caixa">
-                        <label for="prof">Professor Regente:</label>
-                        <input id="prof" type="text" name="prof" placeholder="xxxxxx" required>
-                    </div>
-                    
-                    <div class="input-caixa">
-                        <label for="sala">Número da Sala de Aula:</label>
-                        <input id="sala" type="number" name="sala" placeholder="00" required>
-                    </div>
-                    
-
-                    <div class="input-caixa">
-                        <label for="turma">Perfil da Turma:</label>
-                        <input id="turma" type="text" name="turma" placeholder="Turma y, tem um perfil xxxxx" required>
-                    </div>
-
-                </div> 
-
-                <div class="login-button">
-                    <button><a href="#">Cadastrar</a></button>
+                <div class="input-caixa">
+                    <label for="serie">Série/Etapa:</label>
+                    <input id="serie" type="text" name="serie" placeholder="ex: segundo ano" required>
                 </div>
 
-            </form>
+                <div class="input-caixa">
+                    <label for="turno">Turno:</label>
+                    <input id="turno" type="text" name="turno" placeholder="Matutino/Vespertino" required>
+                </div>
 
-            <footer class="rodape">
-                <p>
-                &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
-                </p>
-                <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
-            </footer>
+                <div class="input-caixa">
+                    <label for="modalidade">Modalidade:</label>
+                    <input id="modalidade" type="text" name="modalidade" placeholder="Integral/Meio período" required>
+                </div>
 
-        
-         </div>
+                <div class="input-caixa">
+                    <label for="num">Número de Alunos:</label>
+                    <input id="num" type="number" name="num" placeholder="00" required>
+                </div>
+
+                <div class="input-caixa">
+                    <label for="prof">Professor Regente:</label>
+                    <input id="prof" type="text" name="prof" placeholder="xxxxxx" required>
+                </div>
+
+                <div class="input-caixa">
+                    <label for="sala">Número da Sala:</label>
+                    <input id="sala" type="number" name="sala" placeholder="00" required>
+                </div>
+
+                <div class="input-caixa">
+                    <label for="turma">Perfil da Turma:</label>
+                    <input id="turma" type="text" name="turma" placeholder="Turma y, tem um perfil xxxxx" required>
+                </div>
+
+            </div>
+
+            <div class="login-button">
+                <button type="submit">Cadastrar</button>
+            </div>
+
+        </form>
     </div>
+</div>
+
+<footer class="rodape">
+    <p>&copy; <span id="anoAtual"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa</p>
+    <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+</footer>
+
+<script>
+    document.getElementById("anoAtual").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
-

@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducaFlow</title>
+    <title>Cadastro turma</title>
+    <link rel="stylesheet" href="turma.css">
 </head>
+
 <body>
-    
+     <header class="top-header">
+    <div class="header-logo">
+        <img src="Logo EducaFlow em verde.png" alt="EducaFlow">
+    </div>
+</header>
+
+
+    <div class="container">
+
+         <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>Cadastro de Turma</h1>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="input-caixa">
+                        <label for="ano">Ano Letivo:</label>
+                        <input id="ano" type="number" name="ano" placeholder="ex: 2025" required>
+                    </div>
+                
+                    <div class="input-caixa">
+                        <label for="serie">Série/Etapa:</label>
+                        <input id="serie" type="text" name="serie" placeholder="ex: segundo ano" required>
+                    </div>
+
+                    <div class="input-caixa">
+                        <label for="turno">Turno:</label>
+                        <input id="turno" type="text" name="turno" placeholder="Matutino/Vespertino" required>
+                    </div>
+
+                    <div class="input-caixa">
+                        <label for="modalidade">Modalidade:</label>
+                        <input id="modalidade" type="text" name="modalidade" placeholder="Integral/Meio período" required>
+                    </div>
+
+                    <div class="input-caixa">
+                        <label for="num">Número de Alunos:</label>
+                        <input id="num" type="number" name="num" placeholder="00" required>
+                    </div>
+
+                    <div class="input-caixa">
+                        <label for="prof">Professor Regente:</label>
+                        <input id="prof" type="text" name="prof" placeholder="xxxxxx" required>
+                    </div>
+                    
+                    <div class="input-caixa">
+                        <label for="sala">Número da Sala de Aula:</label>
+                        <input id="sala" type="number" name="sala" placeholder="00" required>
+                    </div>
+                    
+
+                    <div class="input-caixa">
+                        <label for="turma">Perfil da Turma:</label>
+                        <input id="turma" type="text" name="turma" placeholder="Turma y, tem um perfil xxxxx" required>
+                    </div>
+
+                </div> 
+
+                <div class="login-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+
+            </form>
+
+            <footer class="rodape">
+                <p>
+                &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
+                </p>
+                <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+            </footer>
+
+        
+         </div>
+    </div>
+
 </body>
 </html>
+

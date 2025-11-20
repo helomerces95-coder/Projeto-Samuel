@@ -8,14 +8,21 @@
 </head>
 
 <body>
-    <header class="top-header">
-    <div class="header-logo">
-        <img src="Logo EducaFlow em verde.png" alt="EducaFlow">
-    </div>
+    <header class="cabecalho">
+        <img src="Logo EducaFlow em verde.png" class="logo" alt="EducaFlow">
 </header>
 
-    <div class="container">
+<!-- area que deixa o sidebar escondido -->
+<div class="hover-area"></div>
+<aside class="sidebar">
+    <h2>Menu</h2>
 
+    <a href="home.html" class="menu-item">Início</a>
+    <a href="aluno.html" class="menu-item">Alunos</a>
+    <a href="servidor.html" class="menu-item">Servidores</a>
+    <a href="turma.html" class="menu-item">Turmas</a>
+</aside>
+    <div class="container">
         <div class="form">
             <form action="#">
                 <div class="form-header">
@@ -107,18 +114,18 @@
                 </div>
 
                 <div class="login-button">
-                    <button><a href="#">Cadastrar</a></button>
+                    <button type="submit">Cadastrar</button>
                 </div>
-
+            </div>
             </form>
         </div>
     </div>
     <footer class="rodape">
-                <p>
-                &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
-                </p>
-                <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
-            </footer>
+        <p>
+        &copy; <span id="ano"></span> Instituto Federal Baiano - Campus Bom Jesus da Lapa
+        </p>
+        <p>Todos os direitos reservados | Desenvolvido por EducaFlow</p>
+    </footer>
 </body>
 </html>
 

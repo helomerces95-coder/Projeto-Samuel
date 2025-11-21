@@ -50,7 +50,7 @@ body {
     position: fixed;
     top: 80px;
     left: -260px; /* totalmente escondida */
-    height: calc(100% - 80px - 80px);
+    height: 100%;
     transition: 0.4s ease;
     z-index: 999;
 }
@@ -80,23 +80,6 @@ body {
 
 .menu-item:hover {
     background-color: #2f4443;
-}
-
-/* ÍCONE HAMBÚRGUER*/
-
-.sidebar::before {
-    content: "☰";
-    position: absolute;
-    right: -40px;
-    top: 20px;
-    font-size: 28px;
-    color: white;
-    transition: 0.3s ease;
-}
-
-/* Some quando abrir */
-.sidebar:hover::before {
-    opacity: 0;
 }
 
 /* principal*/

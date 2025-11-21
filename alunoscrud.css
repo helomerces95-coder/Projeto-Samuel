@@ -89,11 +89,17 @@ body {
 }
 
 /* Rodapé */
-.footer {
+.footer{
+    background-color: #22302f;
+    color: white;
     text-align: center;
-    padding: 25px;
-    color: #fff;
-    background-color: #1d2f2d;
-    margin-top: 40px;
+    padding: 18px 10px;
     font-size: 14px;
+    line-height: 1.6;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
 }

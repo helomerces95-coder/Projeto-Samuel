@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #22302f;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-end; /*deixa a logo a esquerda */
+}
+
+.logo {
+    height: 50px;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    min-height: 85vh;
+}
+
+/* SIDEBAR INCREMENTADA */
+.sidebar {
+    width: 260px;
+    background-color: #22302f;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.4s ease;
+    position: fixed;
+    top: 80px;
+    left: -200px; /* para não aparecer nada do sidebar */
+    height: calc(100% - 80px - 60px); /* não atrabalha o cabeçalho e o rodapé */
+    z-index: 999;
+}
+
+/* Quando passar o mouse na lateral esquerda ele vai aparecer */
+.sidebar:hover {
+    left: 0;
+}
+
+
+/* QUANDO PASSAR O MOUSE → ABRE */
+.sidebar:hover {
+    width: 260px;
+}
+
+/* TÍTULO DO MENU */
+.sidebar h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* APARECE O TEXTO AO PASSAR O MOUSE */
+.sidebar:hover h2 {
+    opacity: 1;
+}
+
+
+
+/* ÍCONE HAMBÚRGUER (só aparece quando sidebar está fechada) */
+.sidebar::before {
+    content: "☰"; /* ícone hambúrguer */
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: 0.3s;
+}
+
+/* Quando abrir, some o ícone */
+.sidebar:hover::before {
+    opacity: 0;
+}
+
+/* LINKS */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: #22302f;
+    text-align: center;
+    opacity: 0;
+}
+
+/* APARECE QUANDO EXPANDIR */
+.sidebar:hover .menu-item {
+    opacity: 1;
+}
+
+.menu-item:hover {
+    background-color: #2e4342;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+.cont_principal {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+}
+
+/* CARTÕES */
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    gap: 80px;
+}
+
+.cartao {
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 40px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.cartao:hover {
+    transform: scale(1.05);
+}
+
+.cartao h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.numero {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* LINHA */
+.linha {
+    width: 100%;
+    height: 2.1px;
+    background: #f2f2f2;
+    margin-top: 10px;
+    position: relative;
+}
+
+.linha::after {
+    content: '➜';
+    position: absolute;
+    right: -14px;
+    top: -11px;
+}
+
+/* INFORMAÇÕES */
+.informacoes {
+    text-align: center;
+}
+
+.informacoes img {
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* abaixo do sidebar */
+}

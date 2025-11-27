@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #22302f;
+    padding: 10px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* deixa o sidebar escondido */
+
+.hover-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100vh;
+    z-index: 998;
+}
+
+/* SIDEBAR*/
+
+.sidebar {
+    width: 260px;
+    background-color: #22302f;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    position: fixed;
+    top: 80px;
+    left: -260px; /* totalmente escondida */
+    height: calc(100% - 80px - 80px);
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+/* Abre quando passar o mouse pela borda */
+.hover-area:hover + .sidebar,
+.sidebar:hover {
+    left: 0;
+}
+
+/* Título do menu */
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Links do menu */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #2f4443;
+}
+
+/* principal*/
+
+.container {
+    max-width: 900px;
+    margin: 60px auto 120px auto; /* espaço para o rodapé */
+    padding: 20px;
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000020;
+}
+
+.form-header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GRID DO FORMULÁRIO */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-caixa {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-caixa label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-caixa input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-caixa input:focus {
+    border-color: #22302f;
+}
+
+/* BOTÃO */
+
+.login-button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-button button {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #22302f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button button:hover {
+    background-color: #2f4443;
+}
+
+/* rodapé*/
+
+.rodape {
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+}
+

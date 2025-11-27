@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    background-color: #1d2f2d;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #1d2f2d;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th {
+    background-color: #1d2f2d;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.tabela td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela tr:hover {
+    background-color: #f4f8f7;
+}
+
+/* Botões */
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.editar {
+    background-color: #1d2f2d;
+    color: white;
+}
+
+.editar:hover {
+    background-color: #28423f;
+}
+
+.excluir {
+    background-color: #b32020;
+    color: white;
+}
+
+.excluir:hover {
+    background-color: #d32c2c;
+}
+
+/* Rodapé */
+.footer{
+    background-color: #22302f;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+}

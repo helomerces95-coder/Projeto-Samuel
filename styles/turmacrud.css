@@ -2,20 +2,90 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f1f5f4;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.header {
-    width: 100%;
-    background-color: #1d2f2d;
-    padding: 15px;
+/* Cabeçalho */
+.cabecalho {
+    background-color: #22302f;
+    padding: 15px 50px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end; /*deixa a logo a esquerda */
+    text-align: center;
 }
 
 .logo {
-    height: 35px;
+    height: 40px;
 }
+
+/* SIDEBAR INCREMENTADA */
+.sidebar {
+    width: 260px;
+    background-color: #22302f;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.4s ease;
+    position: fixed;
+    text-decoration: none;
+    top: 0; /* Agora começa no topo da tela */
+    left: -260px;
+    height: 100vh; /* Sidebar de cima a baixo */
+    z-index: 999;
+}
+
+/* QUANDO PASSAR O MOUSE → ABRE */
+.sidebar:hover {
+    left: 0;
+    width: 260px;
+}
+
+/* TÍTULO DO MENU */
+.sidebar h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* APARECE O TEXTO AO PASSAR O MOUSE */
+.sidebar:hover h2 {
+    opacity: 1;
+}
+
+/* ÍCONES E LINKS DA SIDEBAR */
+.menu-item {
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none; /* Remove aparência de link */
+    cursor: default; /* Não fica com mãozinha */
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Aparece ao passar o mouse */
+.sidebar:hover .menu-item {
+    opacity: 1;
+}
+
+/* Ícone hambúrguer */
+.sidebar::before {
+    content: "☰";
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: 0.3s;
+}
+
+.sidebar:hover::before {
+    opacity: 0;
+}
+
 
 .container {
     width: 80%;
@@ -55,10 +125,32 @@ body {
     background-color: #f4f8f7;
 }
 
-/* BOTÕES */
+/* Botões */
 .acoes {
     display: flex;
     gap: 10px;
+}
+
+.topo-acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cadastrar {
+    background-color: #1d2f2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.cadastrar:hover {
+    background-color: #2b4845;
 }
 
 .btn {
@@ -87,8 +179,8 @@ body {
     background-color: #d32c2c;
 }
 
-/* RODAPÉ */
-.footer{
+/* Rodapé */
+.footer {
     background-color: #22302f;
     color: white;
     text-align: center;
@@ -96,7 +188,6 @@ body {
     font-size: 14px;
     line-height: 1.6;
     width: 100%;
-
     position: fixed;
     bottom: 0;
     left: 0;

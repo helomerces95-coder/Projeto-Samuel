@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
 }
 
 /* CONTAINER */
@@ -37,9 +37,9 @@ body {
     gap: 25px;
     transition: 0.4s ease;
     position: fixed;
-    top: 80px;
+    top: 0;
     left: -200px; /* para não aparecer nada do sidebar */
-    height: calc(100% - 80px - 60px); /* não atrabalha o cabeçalho e o rodapé */
+    height: 100vh;
     z-index: 999;
 }
 
@@ -67,7 +67,6 @@ body {
 .sidebar:hover h2 {
     opacity: 1;
 }
-
 
 
 /* ÍCONE HAMBÚRGUER (só aparece quando sidebar está fechada) */

@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Alunos</title>
-    <link rel="stylesheet" href="alunoscrud.css">
+    <link rel="stylesheet" href="../styles/alunoscrud.css">
 </head>
 <body>
 
     <!-- Cabeçalho -->
-    <header class="header">
+    <header class="cabecalho">
         <img src="Logo EducaFlow em verde.png" alt="EducaFlow" class="logo">
     </header>
 
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html" class="menu-item">Início</a>
+        <a href="alunoscrud.html" class="menu-item">Alunos</a>
+        <a href="servidorescrud.html" class="menu-item">Servidores</a>
+        <a href="turmacrud.html" class="menu-item">Turmas</a>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <div class="container">
-        <h1 class="titulo">Lista de Alunos</h1>
+    <main class="cont_principal">
+        <div class="topo-acoes">
+            <h1 class="titulo">Lista de Alunos</h1>
+            <a href="aluno.html" class="btn cadastrar">Cadastrar</a>
+        </div>
 
         <table class="tabela">
             <thead>
@@ -58,6 +72,7 @@
                 </tr>
             </tbody>
         </table>
+    </main>
     </div>
 
     <!-- Rodapé -->
